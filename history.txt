@@ -1,0 +1,82 @@
+# submitted #			mit score
+random forest
+cm:
+[[8019, 386], [526, 9945]]
+Accuracy:	0.951684	0.9494691
+Precision:	0.962636
+Recall:		0.949766
+F1_score:	0.956158
+
+random forest
+cm:
+[[8004  401], [ 503 9968]]
+Accuracy:	0.952108	0.9501152
+Precision:	0.961327
+Recall:		0.951963
+F1_score:	0.956622
+
+optimized random forest
+cm:
+[[8040  365], [ 473 9998]]	
+Accuracy:	0.9556050	0.9535138
+Precision:	0.9647785
+Recall:		0.9548276
+F1_score:	0.9597773
+
+ensemble
+cm:
+[[8052  353], [ 474 9997]]	
+Accuracy:	0.9561878	0.9547778
+Precision:	0.9658937
+Recall:		0.9547321
+F1_score:	0.9602805
+
+optimized xgboost
+cm:
+[[ 8073   332], [  451 10020]]
+Accuracy:	0.9585188	0.9538509
+Precision:	0.9679289
+Recall:		0.9569287
+F1_score:	0.9623973
+
+voting ensemble with optimized [xgboost, random forest] hard vote
+cm:
+[[8178  227], [ 568 9903]]
+Accuracy:	0.9578830	0.9544689
+Precision:	0.9775913
+Recall:		0.9457549
+F1_score:	0.9614096
+
+voting ensemble with optimized [xgboost, random forest, extra forest, ada boost]
+cm:
+[[ 8041   364], [  471 10000]]
+Accuracy:	0.9557639	0.9527274
+Precision:	0.9648784
+Recall:		0.9550186
+F1_score:	0.9599232
+
+cm:
+[[ 8073   332],  [  471 10000]]
+Accuracy:	0.9574592	0.9549464
+Precision:	0.9678668
+Recall:		0.9550186
+F1_score:	0.9613998
+
+voting ensemble with optimized [xgboost, random forest], extra forest, stacking ensemble
+cm:
+[[ 8064   341], [  440 10031]]	#best so far
+Accuracy:	0.9586247	0.9563227
+Precision:	0.9671230
+Recall:		0.9579792
+F1_score:	0.9625294
+
+cm:
+[[8095  310], [ 496 9975]]
+Accuracy:	0.9573003	0.9558733
+Precision:	0.9698590
+Recall:		0.9526311
+F1_score:	0.9611679
+
+try extra forest
+try voting ensemble with optimized [xgboost, random forest, extra forest, ada boost]
+try cnn
