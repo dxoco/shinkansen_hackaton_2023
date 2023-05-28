@@ -64,19 +64,28 @@ F1_score:	0.9613998
 
 voting ensemble with optimized [xgboost, random forest], extra forest, stacking ensemble
 cm:
-[[ 8064   341], [  440 10031]]	#best so far
-Accuracy:	0.9586247	0.9563227
-Precision:	0.9671230
-Recall:		0.9579792
-F1_score:	0.9625294
-
-cm:
-[[8095  310], [ 496 9975]]
-Accuracy:	0.9573003	0.9558733
+[[8095  310], [ 496 9975]]	#best so far
+Accuracy:	0.9573003	0.9566036
 Precision:	0.9698590
 Recall:		0.9526311
 F1_score:	0.9611679
 
+LightGBM, fine tuned
+cm:
+[[ 8085   320], [  471 10000]]
+Accuracy:	0.9580949	0.949413
+Precision:	0.9689922
+Recall:		0.9550186
+F1_score:	0.9619547
+
+
+
+LightGBM, fine tune
+CatBoost, fine tune
 try extra forest
+	then fine tune the extra forest
 try voting ensemble with optimized [xgboost, random forest, extra forest, ada boost]
+
+train all models with X, y in the voting ensemble
+
 try cnn
