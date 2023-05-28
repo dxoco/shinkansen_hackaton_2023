@@ -64,8 +64,8 @@ F1_score:	0.9613998
 
 voting ensemble with optimized [xgboost, random forest], extra forest, stacking ensemble
 cm:
-[[8095  310], [ 496 9975]]	#best so far
-Accuracy:	0.9573003	0.9566036
+[[8095  310], [ 496 9975]]
+Accuracy:	0.9573003
 Precision:	0.9698590
 Recall:		0.9526311
 F1_score:	0.9611679
@@ -73,19 +73,44 @@ F1_score:	0.9611679
 LightGBM, fine tuned
 cm:
 [[ 8085   320], [  471 10000]]
-Accuracy:	0.9580949	0.949413
+Accuracy:	0.9580949	0.949413	# +0.005 with PCA
 Precision:	0.9689922
 Recall:		0.9550186
 F1_score:	0.9619547
 
+voting ensemble with optimized [xgboost, random forest, LightGBM] + stacked model, soft vote
+cm:
+[[ 8076   329], [  457 10014]]
+Accuracy:	0.9583598	0.9555924
+Precision:	0.9681910
+Recall:		0.9563556
+F1_score:	0.9622370
+
+catboost
+cm:
+[[ 8092   313], [  468 10003]]
+Accuracy:	0.9586247	0.9564631
+Precision:	0.9696588
+Recall:		0.9553051
+F1_score:	0.9624284
+
+catboost fine tuned
+[[ 8070   335], [  450 10021]]
+Accuracy:	0.9584128	0.9557047
+Precision:	0.9676516	
+Recall:		0.9570242
+F1_score:	0.9623085
+cm:
+[[ 8082   323], [  443 10028]]
+Accuracy:	0.9594194	0.953
+Precision:	0.9687953
+Recall:		0.9576927
+F1_score:	0.9632120
 
 
-LightGBM, fine tune
-CatBoost, fine tune
-try extra forest
-	then fine tune the extra forest
-try voting ensemble with optimized [xgboost, random forest, extra forest, ada boost]
+try voting ensemble with optimized [xgboost, random forest, CatBoost] 
+			+ stacked model(xgboost, random forest, CatBoost)
 
 train all models with X, y in the voting ensemble
 
-try cnn
+try svm
