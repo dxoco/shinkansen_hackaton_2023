@@ -88,11 +88,11 @@ F1_score:	0.9622370
 
 catboost
 cm:
-[[ 8092   313], [  468 10003]]
-Accuracy:	0.9586247	0.9564631
-Precision:	0.9696588
-Recall:		0.9553051
-F1_score:	0.9624284
+[[ 8094   311], [  466 10005]]
+Accuracy:	0.9588366	0.9565755
+Precision:	0.9698527
+Recall:		0.9554961
+F1_score:	0.9626209
 
 catboost fine tuned
 [[ 8070   335], [  450 10021]]
@@ -100,12 +100,6 @@ Accuracy:	0.9584128	0.9557047
 Precision:	0.9676516	
 Recall:		0.9570242
 F1_score:	0.9623085
-cm:
-[[ 8082   323], [  443 10028]]
-Accuracy:	0.9594194	0.953
-Precision:	0.9687953
-Recall:		0.9576927
-F1_score:	0.9632120
 
 
 try voting ensemble with optimized [xgboost, random forest, CatBoost] 
