@@ -46,6 +46,13 @@ Accuracy:	0.9578830	0.9544689
 Precision:	0.9775913
 Recall:		0.9457549
 F1_score:	0.9614096
+voting ensemble with optimized [xgboost, random forest] soft vote
+cm:
+[[8149  256], [ 615 9856]]
+Accuracy:	0.9538567	0.950396
+Precision:	0.9746835
+Recall:		0.9412664
+F1_score:	0.9576835
 
 voting ensemble with optimized [xgboost, random forest, extra forest, ada boost]
 cm:
@@ -101,10 +108,23 @@ Precision:	0.9676516
 Recall:		0.9570242
 F1_score:	0.9623085
 
-
 try voting ensemble with optimized [xgboost, random forest, CatBoost] 
 			+ stacked model(xgboost, random forest, CatBoost)
-
-train all models with X, y in the voting ensemble
+cm:
+[[ 8086   319], [  464 10007]]
+Accuracy:	0.9585188	0.9557328
+Precision:	0.9691071
+Recall:		0.9556871
+F1_score:	0.9623503
+vote_ensemble random forest, xgboost, cat, lgbm,  hard_vote
+cm:
+[[ 8068   337], [  460 10011]]
+Accuracy:	0.9577771	0.9541037
+Precision:	0.9674333
+Recall:		0.9560691
+F1_score:	0.9617177
+voting ensemble with optimized [xgboost, random forest, CatBoost, lgbm] soft_vote
+			+ stacked model(xgboost, random forest, CatBoost, lgbm)
+			acc	0.954188
 
 try svm
